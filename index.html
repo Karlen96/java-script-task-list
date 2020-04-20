@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>task list</title>
+	<link rel="stylesheet" href="style/bootstrap.min.css">
+	<link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="container">
+			<div class="row d-flex justify-content-center">
+				<input class="input__task form-control col-md-6" type="text" placeholder="enter task">
+				<button class="btn btn-success add">add</button>
+			</div>
+			<div class="row d-flex lists">
+				<div class="task__list col-md-6 d-flex align-items-center flex-column">
+					<h3 class="text-center">task list</h3>
+					<ul class="list__task list-group col-md-12">
+					</ul>
+				</div>
+				<div class="task__list col-md-6 d-flex align-items-center flex-column">
+					<h3 class="text-center">Completed task list</h3>
+					<ul class="completed__task list-group col-md-12">
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--scripts====================-->
+	<script src="script.js"></script>
+	<script src="edit.js"></script>
+	<script src="chackBox.js"></script>
+	<script src="delete.js"></script>
+	<!--scripts====================-->
+</body>
+
+</html>
