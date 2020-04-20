@@ -1,7 +1,7 @@
 function edit() {
 	const allLi = document.querySelectorAll(".lists li");
 	const allText = document.querySelectorAll(".lists li .text");
-	const allH5 = document.querySelectorAll(".lists li .text h5");
+	const allH6 = document.querySelectorAll(".lists li .text h6");
 	let editTask = this.getAttribute("data-id");
 	let buttons = document.querySelectorAll(".lists li .buttons");
 	for (let i = 0; i < allLi.length; i++) {
@@ -15,13 +15,13 @@ function edit() {
 			buttons[i].append(save);
 			let inputEdit = document.createElement("input");
 			allText[i].append(inputEdit);
-			allH5[i].style.display = "none";
+			allH6[i].style.display = "none";
 			let saveBtn = document.querySelector(".save");
 			saveBtn.addEventListener("click", () => {
 				let textEditInput = allLi[i].querySelector(".text input");
 				if (textEditInput.value != "") {
-					allH5[i].innerHTML = textEditInput.value;
-					allH5[i].style.display = "block";
+					allH6[i].innerHTML = textEditInput.value;
+					allH6[i].style.display = "block";
 					saveBtn.remove();
 					inputEdit.remove();
 				}

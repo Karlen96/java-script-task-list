@@ -19,7 +19,7 @@ addTask.addEventListener("click", () => {
 				<span>${count+1})</span>
 				<input class="check__box" type="checkbox" data-id="${count}">
 			</div>
-			<div class="text"><h5>${inputValue}</h5></div>
+			<div class="text"><h6>${inputValue}</h6></div>
 			<div class="buttons">
 				<buttom class="edit__task btn btn-warning" data-id="${count}">edit</buttom>
 				<button class="delete__task btn btn-warning" data-id="${count}">delete</button>
